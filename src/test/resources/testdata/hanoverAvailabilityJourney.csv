@@ -1,0 +1,4 @@
+pageName,pageType,homeLinkPath,expectedPath,expectedTitleFragment,expectedHeading,availabilityPath,screenshotName
+Home Insurance,product,/individuals/products/home-insurance,/individuals/products/home-insurance,Home insurance,Home insurance,/contact-agent,tc02_hanover_home_insurance
+Auto Insurance,product,/individuals/products/auto-insurance,/individuals/products/auto-insurance,Auto insurance,Auto insurance,/contact-agent,tc02_hanover_auto_insurance
+Contact Agent,contact,/contact-agent,/contact-agent,Contact an agent,Contact an agent,,tc02_hanover_contact_agent

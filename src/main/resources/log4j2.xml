@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="frameworkLogFile">${sys:framework.log.file:-logs/framework.log}</Property>
+        <Property name="dataProviderLogLevel">${sys:data.provider.log.level:-warn}</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger - %msg%n"/>
+        </Console>
+        <File name="File" fileName="${frameworkLogFile}" append="true" immediateFlush="true" createOnDemand="true">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger - %msg%n</pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.framework.data.TestDataProviders" level="${dataProviderLogLevel}" additivity="true"/>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>

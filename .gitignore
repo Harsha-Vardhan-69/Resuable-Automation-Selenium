@@ -1,0 +1,14 @@
+# Java/Maven
+/target/
+*.class
+*.log
+
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports, logs, drivers, lib
+Reports/
+logs/
+drivers/
